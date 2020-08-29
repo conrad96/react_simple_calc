@@ -7,7 +7,7 @@ class KeyPad extends Component {
 
         this.keypadKeys = [            
             { value: '/', type: 'symbol'},
-            { value: 'X', type: 'symbol'},
+            { value: '*', type: 'symbol'},
             { value: '+', type: 'symbol'},
             { value: '-', type: 'symbol'},
             { value: '0', type: 'number'},

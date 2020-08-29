@@ -36,11 +36,11 @@ class App extends Component {
     }
   }
 
-  reset = (symbol) => {    
+  reset = () => {    
     this.setState({result: ''})    
   }
 
-  delete = (symbol) => {
+  delete = () => {
     this.setState({
       result: this.state.result.slice(0, -1)
     })
