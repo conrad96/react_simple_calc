@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <header className="App-header">A Simple Calculator</header>
+        <header className="App-header">React Calculator</header>
         <div className="calculator-wrapper">
             <div className="visible-wrapper">
                 <ResultPad result={this.state.result} />
