@@ -26,9 +26,24 @@ class App extends Component {
   onClickhandler = (symbol) => {
     if(symbol === '=') {
       this.calculate()
+    }else 
+    if(symbol === 'CE') {
+      this.reset()
+    }else if(symbol === '<=') {
+      this.delete()
     }else {
       this.setState({result: this.state.result + symbol})
     }
+  }
+
+  reset = (symbol) => {    
+    this.setState({result: ''})    
+  }
+
+  delete = (symbol) => {
+    this.setState({
+      result: this.state.result.slice(0, -1)
+    })
   }
 
   render() {

@@ -20,7 +20,10 @@ class KeyPad extends Component {
             { value: '7', type: 'number'},
             { value: '8', type: 'number'},
             { value: '9', type: 'number'},
-            { value: '0', type: 'number'},
+            { value: '0', type: 'number'},            
+            { value: 'CE', type: 'symbol'},
+            { value: '<=', type: 'symbol'},
+            { value: '=', type: 'symbol'},
         ];
     }       
 
