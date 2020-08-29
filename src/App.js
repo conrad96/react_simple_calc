@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import KeyPad from './components/keypad';
 import ResultPad from './components/result';
+import './App.scss';
 class App extends Component {
   constructor(props) {
     super();
@@ -24,7 +25,7 @@ class App extends Component {
 
   onClickhandler = (symbol) => {
     if(symbol === '=') {
-      this.calculate
+      this.calculate()
     }else {
       this.setState({result: this.state.result + symbol})
     }

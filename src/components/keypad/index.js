@@ -43,6 +43,17 @@ class KeyPad extends Component {
                                                 {data.value}
                                             </li>
                                         );
+                                    }else {
+                                        return (
+                                            <li 
+                                            key={index}
+                                            name={data.value}
+                                            className={data.type}
+                                            onClick={() => this.props.onClickhandler(data.value)}
+                                            >
+                                                {data.value}
+                                            </li>
+                                        );
                                     }
                                 })
                             }
