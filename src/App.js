@@ -4,9 +4,29 @@ import ResultPad from './components/result';
 class App extends Component {
   constructor(props) {
     super();
-    
+
     this.state = {
       result: ""
+    }
+  }
+
+  calculate = () => {
+    try {
+      this.setState({
+        result: (eval(this.state.result) || '') + ''
+      })
+    }catch {
+      this.setState({
+        result: "Invalid"
+      })
+    }
+  }
+
+  onClickhandler = (symbol) => {
+    if(symbol === '=') {
+      this.calculate
+    }else {
+      this.setState({result: this.state.result + symbol})
     }
   }
 
